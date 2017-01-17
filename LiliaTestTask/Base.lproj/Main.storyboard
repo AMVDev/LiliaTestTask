@@ -1,26 +1,187 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qKY-jd-dhC">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Translator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LiliaTestTask" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Li9-3K-Krz">
+                                <rect key="frame" x="16" y="187" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiX-da-Cy6">
+                                <rect key="frame" x="16" y="225" width="288" height="30"/>
+                                <state key="normal" title="Перевести"/>
+                                <connections>
+                                    <action selector="getTranslatedText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6j-Xb-mwV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfc-O9-CMI">
+                                <rect key="frame" x="16" y="263" width="288" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pfc-O9-CMI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5RL-L4-wsf"/>
+                            <constraint firstItem="tiX-da-Cy6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Xl-NZ-mnb"/>
+                            <constraint firstItem="pfc-O9-CMI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9eu-os-SaB"/>
+                            <constraint firstItem="Li9-3K-Krz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GNn-pX-y3y"/>
+                            <constraint firstItem="pfc-O9-CMI" firstAttribute="top" secondItem="tiX-da-Cy6" secondAttribute="bottom" constant="8" id="Kp9-Ng-4CH"/>
+                            <constraint firstItem="tiX-da-Cy6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LID-wj-a9p"/>
+                            <constraint firstItem="Li9-3K-Krz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="167" id="Sic-ik-2qw"/>
+                            <constraint firstItem="tiX-da-Cy6" firstAttribute="top" secondItem="Li9-3K-Krz" secondAttribute="bottom" constant="8" id="Zr6-fh-dP6"/>
+                            <constraint firstItem="Li9-3K-Krz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zMR-CK-VON"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Translator" id="G6l-ci-xiP"/>
+                    <connections>
+                        <outlet property="enTextField" destination="Li9-3K-Krz" id="JEc-4Y-wlo"/>
+                        <outlet property="translatedTextLabel" destination="pfc-O9-CMI" id="wFZ-CY-Fcq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1073" y="-160"/>
+        </scene>
+        <!--Gifs-->
+        <scene sceneID="Hzd-dp-rCB">
+            <objects>
+                <viewController id="ypO-9M-5o6" customClass="GifsViewController" customModule="LiliaTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x7w-vU-H2A"/>
+                        <viewControllerLayoutGuide type="bottom" id="e7X-GG-PMF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x3u-Z1-FJS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nGm-Db-h0i">
+                                <rect key="frame" x="40" y="211" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gO8-D9-cpD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Z8x-h7-Wdl" customClass="CollectionViewCell" customModule="LiliaTestTask">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KcP-41-NV6">
+                                                    <rect key="frame" x="-95" y="-39" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="KcP-41-NV6" id="Vs6-5G-pVF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ypO-9M-5o6" id="hj7-dB-yt3"/>
+                                    <outlet property="delegate" destination="ypO-9M-5o6" id="k5u-62-olI"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nGm-Db-h0i" firstAttribute="top" secondItem="x7w-vU-H2A" secondAttribute="bottom" id="Kox-FS-i73"/>
+                            <constraint firstItem="e7X-GG-PMF" firstAttribute="top" secondItem="nGm-Db-h0i" secondAttribute="bottom" id="Plu-h3-5GH"/>
+                            <constraint firstItem="nGm-Db-h0i" firstAttribute="leading" secondItem="x3u-Z1-FJS" secondAttribute="leadingMargin" id="S0s-VJ-sGo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nGm-Db-h0i" secondAttribute="trailing" id="mEv-1D-wmg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gifs" id="c94-lK-Iga"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zxm-nK-GOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="867"/>
+        </scene>
+        <!--Design View Controller-->
+        <scene sceneID="ELp-d0-OPo">
+            <objects>
+                <viewController id="w4l-zn-L7m" customClass="DesignViewController" customModule="LiliaTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c1F-pl-Fan"/>
+                        <viewControllerLayoutGuide type="bottom" id="NI7-U2-5PB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W9e-KA-7y6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eRI-3i-Dkx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTQ-pZ-r1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2707.5" y="723.59154929577471"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Jal-dX-eWT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qKY-jd-dhC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="X8A-PN-pFc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ois-so-wDi"/>
+                        <segue destination="ypO-9M-5o6" kind="relationship" relationship="viewControllers" id="K1P-J5-n5f"/>
+                        <segue destination="gRj-MZ-NRD" kind="relationship" relationship="viewControllers" id="JDm-QF-E9i"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJU-Z3-gdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Design-->
+        <scene sceneID="q0g-Dk-MuA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gRj-MZ-NRD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Design" id="NcG-Pa-lBw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="orr-2G-jhO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w4l-zn-L7m" kind="relationship" relationship="rootViewController" id="aIu-GJ-BIv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voh-Nt-dj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="723.59154929577471"/>
         </scene>
     </scenes>
 </document>

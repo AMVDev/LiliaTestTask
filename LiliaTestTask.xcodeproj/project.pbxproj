@@ -12,6 +12,12 @@
 		2B082A571E2DE29600F5B9F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B082A551E2DE29600F5B9F7 /* Main.storyboard */; };
 		2B082A591E2DE29600F5B9F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B082A581E2DE29600F5B9F7 /* Assets.xcassets */; };
 		2B082A5C1E2DE29600F5B9F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B082A5A1E2DE29600F5B9F7 /* LaunchScreen.storyboard */; };
+		2B53E5991E2DE43C005D620B /* GifsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E5981E2DE43C005D620B /* GifsViewController.swift */; };
+		2B53E59B1E2DE44B005D620B /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E59A1E2DE44B005D620B /* DesignViewController.swift */; };
+		2B53E59D1E2DFD6A005D620B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E59C1E2DFD6A005D620B /* UIImage+Gif.swift */; };
+		2B53E59F1E2DFE3B005D620B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E59E1E2DFE3B005D620B /* CollectionViewCell.swift */; };
+		2B53E5A11E2E0134005D620B /* gifsAssets in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E5A01E2E0134005D620B /* gifsAssets */; };
+		BF22403601F35BAB754CCF5A /* Pods_LiliaTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D608E3E1D1087BBD538D4A77 /* Pods_LiliaTestTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		2B082A581E2DE29600F5B9F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B082A5B1E2DE29600F5B9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B082A5D1E2DE29600F5B9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B53E5981E2DE43C005D620B /* GifsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifsViewController.swift; sourceTree = "<group>"; };
+		2B53E59A1E2DE44B005D620B /* DesignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
+		2B53E59C1E2DFD6A005D620B /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		2B53E59E1E2DFE3B005D620B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2B53E5A01E2E0134005D620B /* gifsAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gifsAssets; sourceTree = "<group>"; };
+		99C14B73A3736586FF8B9C82 /* Pods-LiliaTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiliaTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiliaTestTask/Pods-LiliaTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		9D9613777AFE567540B91C17 /* Pods-LiliaTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiliaTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiliaTestTask/Pods-LiliaTestTask.release.xcconfig"; sourceTree = "<group>"; };
+		D608E3E1D1087BBD538D4A77 /* Pods_LiliaTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiliaTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF22403601F35BAB754CCF5A /* Pods_LiliaTestTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C75D53A19BAD5A7F257F327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D608E3E1D1087BBD538D4A77 /* Pods_LiliaTestTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B082A451E2DE29600F5B9F7 = {
 			isa = PBXGroup;
 			children = (
 				2B082A501E2DE29600F5B9F7 /* LiliaTestTask */,
 				2B082A4F1E2DE29600F5B9F7 /* Products */,
+				3B13E0DF6A8439F90DAF2C77 /* Pods */,
+				1C75D53A19BAD5A7F257F327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,28 @@
 		2B082A501E2DE29600F5B9F7 /* LiliaTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				2B53E5A01E2E0134005D620B /* gifsAssets */,
+				2B53E59C1E2DFD6A005D620B /* UIImage+Gif.swift */,
 				2B082A511E2DE29600F5B9F7 /* AppDelegate.swift */,
 				2B082A531E2DE29600F5B9F7 /* ViewController.swift */,
 				2B082A551E2DE29600F5B9F7 /* Main.storyboard */,
+				2B53E59E1E2DFE3B005D620B /* CollectionViewCell.swift */,
+				2B53E59A1E2DE44B005D620B /* DesignViewController.swift */,
+				2B53E5981E2DE43C005D620B /* GifsViewController.swift */,
 				2B082A581E2DE29600F5B9F7 /* Assets.xcassets */,
 				2B082A5A1E2DE29600F5B9F7 /* LaunchScreen.storyboard */,
 				2B082A5D1E2DE29600F5B9F7 /* Info.plist */,
 			);
 			path = LiliaTestTask;
+			sourceTree = "<group>";
+		};
+		3B13E0DF6A8439F90DAF2C77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99C14B73A3736586FF8B9C82 /* Pods-LiliaTestTask.debug.xcconfig */,
+				9D9613777AFE567540B91C17 /* Pods-LiliaTestTask.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B082A601E2DE29600F5B9F7 /* Build configuration list for PBXNativeTarget "LiliaTestTask" */;
 			buildPhases = (
+				0B3DCCB1D4474EABEC8C4EC6 /* [CP] Check Pods Manifest.lock */,
 				2B082A4A1E2DE29600F5B9F7 /* Sources */,
 				2B082A4B1E2DE29600F5B9F7 /* Frameworks */,
 				2B082A4C1E2DE29600F5B9F7 /* Resources */,
+				C99C7445FAA83031C344F647 /* [CP] Embed Pods Frameworks */,
+				B6F4734641872A236E461864 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +168,71 @@
 			files = (
 				2B082A5C1E2DE29600F5B9F7 /* LaunchScreen.storyboard in Resources */,
 				2B082A591E2DE29600F5B9F7 /* Assets.xcassets in Resources */,
+				2B53E5A11E2E0134005D620B /* gifsAssets in Resources */,
 				2B082A571E2DE29600F5B9F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B3DCCB1D4474EABEC8C4EC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F4734641872A236E461864 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiliaTestTask/Pods-LiliaTestTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C99C7445FAA83031C344F647 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiliaTestTask/Pods-LiliaTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B082A4A1E2DE29600F5B9F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B53E5991E2DE43C005D620B /* GifsViewController.swift in Sources */,
 				2B082A541E2DE29600F5B9F7 /* ViewController.swift in Sources */,
+				2B53E59F1E2DFE3B005D620B /* CollectionViewCell.swift in Sources */,
+				2B53E59B1E2DE44B005D620B /* DesignViewController.swift in Sources */,
+				2B53E59D1E2DFD6A005D620B /* UIImage+Gif.swift in Sources */,
 				2B082A521E2DE29600F5B9F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +352,7 @@
 		};
 		2B082A611E2DE29600F5B9F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C14B73A3736586FF8B9C82 /* Pods-LiliaTestTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6FHG8R78C;
@@ -270,6 +366,7 @@
 		};
 		2B082A621E2DE29600F5B9F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9613777AFE567540B91C17 /* Pods-LiliaTestTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6FHG8R78C;
@@ -300,6 +397,7 @@
 				2B082A621E2DE29600F5B9F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
